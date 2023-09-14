@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulario Pacientes</title>
+</head>
+
+<body>
+
+    <section>
+
+        <form id="formularioPacientes">
+            <!-- <form id="paciente-form"></form> -->
+            <h4>Formulario Pacientes</h4>
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"><br>
+
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"><br>
+
+            <label for="fechaIngreso">Fecha Ingreso: </label>
+            <input type="date" id="fechaIngreso" name="fechaIngreso" placeholder="Ingrese su apellido"><br>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" required><br>
+
+            <label for="domicilio">Domicilio</label>
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" placeholder="Ingrese la calle" required><br>
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" placeholder="Ingrese el numero" required><br>
+
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" placeholder="Ingrese la localidad" required><br>
+
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia" placeholder="Ingrese la provincia" required><br><br>
+
+            <input class="botons" type="submit" value="Registrar">
+            
+
+        </form>
+
+        <div class="respuesta"></div>
+
+        
+    </section>
+    <script src="/js/pacientes.js"></script>
+</body>
+
+</html>

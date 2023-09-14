@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de turnos</title>
+    <link rel="stylesheet" href="/css/styleListadoPacientes.css">
+
+
+</head>
+<body>
+     
+    <header>
+        <h1>Lista de turnos</h1>
+    </header>
+    <div class="container">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Id Paciente</th>
+                <th>Id Odontologo</th>
+                <th>Fecha y hora</th>
+            </tr>
+            <!-- Oculta la fila de ejemplo inicialmente -->
+            <tr class="turno-row" style="display: none;">
+                <td class="id"></td>
+                <td class="idPaciente"></td>
+                <td class="idOdontologo"></td>
+                <td class="fechaYHora"></td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="listarTurnos()">Listar turnos</button>
+    <script src="/js/turnos.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Odontologos</title>
+    <link rel="stylesheet" href="/css/styleListadoPacientes.css">
+</head>
+<body>
+     
+    <header>
+        <h1>Lista de Odontologos</h1>
+    </header>
+    <div class="container">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Matricula</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+            <!-- Oculta la fila de ejemplo inicialmente -->
+            <tr class="odontologo-row" style="display: none;">
+                <td class="id"></td>
+                <td class="matricula"></td>
+                <td class="nombre"></td>
+                <td class="apellido"></td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="listarOdontologos()">Listar Odontologos</button>
+
+    <script src="/js/odontologos.js"></script>
+</body>
+</html>

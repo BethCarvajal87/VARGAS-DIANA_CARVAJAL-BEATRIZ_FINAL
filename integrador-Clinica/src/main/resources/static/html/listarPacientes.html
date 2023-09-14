@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pacientes</title>
+    <link rel="stylesheet" href="/css/styleListadoPacientes.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lista de Pacientes</h1>
+    </header>
+    <div class="container">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Fecha de Ingreso</th>
+                <th>Domicilio</th>
+            </tr>
+            <!-- Oculta la fila de ejemplo inicialmente -->
+            <tr class="patient-row" style="display: none;">
+                <td class="id"></td>
+                <td class="nombre"></td>
+                <td class="apellido"></td>
+                <td class="dni"></td>
+                <td class="fechaIngreso"></td>
+                <td class="domicilio"></td>
+            </tr>
+        </table> 
+    </div>
+    <button onclick="listarPacientes()">Listar Pacientes</button>
+    <script src="/js/pacientes.js"></script>
+</body>
+</html>
